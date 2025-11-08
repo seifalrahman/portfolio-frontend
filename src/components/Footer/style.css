@@ -3,24 +3,26 @@
   position: relative;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   color: white;
-  overflow: hidden;
-  margin-top: 100px;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: visible; /* Change from hidden to visible */
+   /* Add space for the wave */
+  padding-top: 0; /* Adjust if needed */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
-
 /* Wave Animation Top */
 .wave-container {
   position: absolute;
-  top: -99px;
+  top: -99px;  /* Position it above the footer */
   left: 0;
   width: 100%;
   height: 100px;
   overflow: hidden;
+  z-index: 1; /* Add this */
 }
 
 .wave {
   width: 100%;
   height: 100%;
+  display: block; /* Add this */
 }
 
 /* Footer Container */

@@ -125,33 +125,7 @@ const Footer = () => {
         onMouseLeave={() => setIsHovering(false)}
       >
         {/* Animated Wave Top */}
-        <div className="wave-container">
-          <svg viewBox="0 0 1200 100" className="wave">
-            <motion.path
-              d="M0,50 C200,0 400,100 600,50 C800,0 1000,100 1200,50 L1200,100 L0,100 Z"
-              fill="url(#waveGradient)"
-              animate={{
-                d: [
-                  "M0,50 C200,0 400,100 600,50 C800,0 1000,100 1200,50 L1200,100 L0,100 Z",
-                  "M0,50 C200,100 400,0 600,50 C800,100 1000,0 1200,50 L1200,100 L0,100 Z"
-                ]
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut"
-              }}
-            />
-            <defs>
-              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#667eea" stopOpacity="0.8" />
-                <stop offset="50%" stopColor="#764ba2" stopOpacity="0.9" />
-                <stop offset="100%" stopColor="#f093fb" stopOpacity="0.8" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+        
 
         <div className="footer-container">
           {/* Main Footer Content */}
